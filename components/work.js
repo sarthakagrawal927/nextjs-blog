@@ -1,4 +1,4 @@
-function Work(props) {
+export default function Work(props) {
   return (
     <>
       {props.activity}. Its a type of {props.type} work, requiring{" "}
@@ -6,5 +6,3 @@ function Work(props) {
     </>
   );
 }
-
-export default Work;
