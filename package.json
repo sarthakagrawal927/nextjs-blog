@@ -8,9 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "axios": "^0.20.0",
     "bootstrap": "^4.5.2",
     "classnames": "^2.2.6",
     "date-fns": "^2.16.1",
+    "fs": "0.0.1-security",
     "gray-matter": "^4.0.2",
     "next": "^9.5.5",
     "react": "16.13.1",
