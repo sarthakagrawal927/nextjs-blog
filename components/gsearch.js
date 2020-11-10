@@ -1,4 +1,6 @@
 import { useState } from "react";
+import styles from "./gsearch.module.scss";
+
 export default function GSearch({ dateString }) {
   const [searchQ, setSearchQuery] = useState("");
 
