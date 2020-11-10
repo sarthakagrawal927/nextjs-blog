@@ -1,3 +1,5 @@
+import styles from "./pomodoro.module.scss";
+
 export default class App extends React.Component {
   constructor(props) {
     super(props);
