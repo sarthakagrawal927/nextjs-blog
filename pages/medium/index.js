@@ -25,7 +25,7 @@ https://medium.com/feed/vue-mastery'
         data-maxcols='1'
         data-layout='grid'
         data-poststyle='external'
-        data-readmore='Read the rest'
+        data-readmore=' Read More'
         data-buttonclass='btn btn-primary'
         data-offset='-100'></div>
     </Layout>
