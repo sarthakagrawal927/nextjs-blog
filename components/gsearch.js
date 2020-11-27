@@ -13,6 +13,7 @@ export default function GSearch() {
         type='text'
         placeholder='Enter keywords to search'
         onChange={(e) => setSearchQuery(e.target.value)}
+        onFocus={(e) => event.target.select()}
       />
       <a target='_blank' href={"https://www.google.com/search?&q=" + searchQ}>
         <button>Search</button>
