@@ -11,6 +11,7 @@ export default function Sarthak() {
       <GSearch />
       <Pomodoro />
       <Whatsapp />
+      <img src="https://wakatime.com/share/@sarthakagrawal927/7466eb9d-adc9-43fa-9bba-8f10836e873f.png" />
     </Layout>
   );
 }

@@ -20,4 +20,3 @@ All my previous anger has now faded away. Also now that I realize this looks lik
 Thank you, Sarthak Agrawal
 
 Now that I have pasted it on Word, it is behaving weirdly as it took its blackish background with it and is just pointing out punctuation. Word is not as great as I thought end of story.
-
