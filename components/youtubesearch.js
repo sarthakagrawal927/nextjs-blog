@@ -11,7 +11,7 @@ export default function GSearch() {
     <>
       <input
         type='text'
-        placeholder='Enter keywords to search'
+        placeholder='Search on Youtube'
         onChange={(e) => setSearchQuery(e.target.value)}
         onFocus={(e) => event.target.select()}
       />
