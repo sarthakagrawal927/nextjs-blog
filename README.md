@@ -2,7 +2,7 @@
 
 // https://swr.vercel.app/getting-started#quick-start
 
-// https://vercel.com/docs/custom-domains
+// https://github.com/garmeeh/next-seo
 
 for further config 
 
