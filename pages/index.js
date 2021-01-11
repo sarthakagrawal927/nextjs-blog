@@ -14,14 +14,14 @@ export default function Home() {
       <Link href='/dashboard'>
         <a>Dashboard</a>
       </Link>{" "}
-      <Link href='/about'>
-        <a>About</a>
-      </Link>{" "}
       <Link href='/posts'>
         <a>Posts</a>
       </Link>{" "}
-      <Link href='/medium'>
+      {/* <Link href='/medium'>
         <a>Medium</a>
+      </Link>{" "} */}
+      <Link href='/memes'>
+        <a>Memes</a>
       </Link>{" "}
     </Layout>
   );

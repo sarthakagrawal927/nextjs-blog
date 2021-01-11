@@ -8,13 +8,13 @@
     "start": "next start"
   },
   "dependencies": {
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.5.2",
     "classnames": "^2.2.6",
     "date-fns": "^2.16.1",
     "fs": "0.0.1-security",
     "gray-matter": "^4.0.2",
-    "next": "^9.5.5",
+    "next": "^10.0.5",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-strap": "0.0.1",
