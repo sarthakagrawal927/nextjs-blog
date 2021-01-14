@@ -6,7 +6,7 @@ const jq = ({ memes }) => {
     <Layout>
       {memes
         .filter(({ ups }) => {
-          return ups > 10000;
+          return ups > 2000;
         })
         .map(({ preview }) => {
           return (
@@ -14,9 +14,8 @@ const jq = ({ memes }) => {
               key={preview[0]}
               src={preview[preview.length - 1]}
               alt=''
-              height={500}
-              width={500}
-              priority={true}
+              height={400}
+              width={400}
             />
           );
         })}
@@ -25,7 +24,7 @@ const jq = ({ memes }) => {
 };
 
 export async function getStaticProps() {
-  const numberOfMemes = 50;
+  const numberOfMemes = 100;
 
   const res2 = await fetch(
     "https://meme-api.herokuapp.com/gimme/" + numberOfMemes,

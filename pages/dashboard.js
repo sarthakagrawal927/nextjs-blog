@@ -1,7 +1,6 @@
 import Layout from "../components/layout";
 import GSearch from "../components/gsearch";
 import YoutubeSearch from "../components/youtubesearch";
-import Whatsapp from "../components/whatsapp";
 
 import Pomodoro from "../components/pomodoro";
 import JQ from "../components/jq";
@@ -9,12 +8,13 @@ import Link from "next/link";
 export default function Sarthak(props) {
   return (
     <Layout title='The Dashboard'>
+      <Link href='/memes'>
+        <a>Memes</a>
+      </Link>{" "}
       <JQ joke={props.joke} quote={props.quote} />
-
       <GSearch />
       <YoutubeSearch />
       <Pomodoro />
-      <Whatsapp />
       <img src='https://wakatime.com/share/@sarthakagrawal927/7466eb9d-adc9-43fa-9bba-8f10836e873f.png' />
       <figure>
         <embed src='https://wakatime.com/share/@sarthakagrawal927/c25c97c9-20d5-414e-9054-5469e2052f51.svg' />
