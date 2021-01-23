@@ -23,6 +23,9 @@ export default function Home() {
       <Link href='/memes'>
         <a>Memes</a>
       </Link>{" "}
+      <Link href='/about'>
+        <a>About</a>
+      </Link>{" "}
     </Layout>
   );
 }
