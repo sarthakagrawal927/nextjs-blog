@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <Layout title='Significant Hobbies'>
       <h2>
-        If there is something stupid I am doing or learning, it will be here
-        soon.
+        If there is something stupid sasd I am doing or learning, it will be
+        here soon.
       </h2>
       <p>H </p>
       <Link href='/dashboard'>
