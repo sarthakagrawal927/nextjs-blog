@@ -21,19 +21,20 @@ async function handler(req, res) {
       name,
       message,
     };
-
     let client;
 
     const connectionString = process.env.MONGOURI;
 
     try {
-      client = await MongoClient.connect(connectionString);
+      client = await MongoClient.connect(connectionString, {
+        useUnifiedTopology: true,
+      });
     } catch (error) {
       res.status(500).json({ message: "Could not connect to database." });
       return;
     }
 
-    const db = client.db();
+    const db = client.db("dash");
 
     try {
       const result = await db.collection("messages").insertOne(newMessage);

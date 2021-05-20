@@ -23,6 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <body>
           <Main />
           <NextScript />
+          <div id='notifications'></div>
         </body>
       </Html>
     );

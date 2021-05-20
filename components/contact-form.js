@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import classes from "./contact-form.module.css";
+import classes from "./contact-form.module.scss";
 import Notification from "./notification";
 
 async function sendContactData(contactDetails) {
