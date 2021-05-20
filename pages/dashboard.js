@@ -1,7 +1,6 @@
 import Layout from "../components/layout";
 import GSearch from "../components/gsearch";
 import YoutubeSearch from "../components/youtubesearch";
-
 import Pomodoro from "../components/pomodoro";
 import JQ from "../components/jq";
 import Link from "next/link";
@@ -25,12 +24,10 @@ export async function getStaticProps() {
   );
   const jokes = await res.json();
   const joke = jokes[0];
-  // console.log(joke);
 
   const res1 = await fetch("https://type.fit/api/quotes");
   const quotes = await res1.json();
   const quote = quotes[Math.ceil(Math.random() * quotes.length)];
-  // console.log(quote);
 
   return {
     props: {
