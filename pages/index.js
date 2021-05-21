@@ -10,25 +10,26 @@ export default function Home() {
         If there is something stupid I am doing or learning, it will be here
         soon.
       </h2>
-      <p>H </p>
-      <Link href='/dashboard'>
-        <a>Dashboard</a>
-      </Link>{" "}
-      <Link href='/posts'>
-        <a>Posts</a>
-      </Link>{" "}
-      {/* <Link href='/medium'>
-        <a>Medium</a>
-      </Link>{" "} */}
-      <Link href='/memes'>
-        <a>Memes</a>
-      </Link>{" "}
-      <Link href='/about'>
-        <a>About</a>
-      </Link>{" "}
-      <Link href='/contact'>
-        <a>Contact</a>
-      </Link>{" "}
+      <ul>
+        <li>
+          <Link href='/dashboard'>Dashboard</Link>
+        </li>{" "}
+        <li>
+          <Link href='/posts'>Posts</Link>
+        </li>{" "}
+        <li>
+          {" "}
+          <Link href='/about'>About</Link>
+        </li>{" "}
+        <li>
+          {" "}
+          <Link href='/contact'>Contact</Link>
+        </li>{" "}
+        <li>
+          {" "}
+          <Link href='/posts/category'>Post Categories</Link>
+        </li>
+      </ul>{" "}
     </Layout>
   );
 }
