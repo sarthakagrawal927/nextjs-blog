@@ -3,8 +3,7 @@ import Layout, { siteTitle } from "../../../components/layout";
 import utilStyles from "../../../styles/utils.module.scss";
 import Link from "next/link";
 import Date from "../../../components/date";
-import { getSortedPostsData } from "../../../lib/posts";
-import { postCategories } from "../../../lib/postCategories";
+import { getSortedPostsData, getAllCategories } from "../../../lib/posts";
 
 export default function Blog({ postsData }) {
   return (
@@ -32,8 +31,9 @@ export default function Blog({ postsData }) {
 
 export async function getStaticPaths() {
   let paths = [];
-  postCategories.map((category) =>
-    paths.push({ params: { category: category } }),
+  const categories = await getAllCategories();
+  categories.map((category) =>
+    paths.push({ params: { category: category.toLowerCase() } }),
   );
   return {
     paths,
@@ -42,7 +42,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  // console.log(getAllCategories());
   const allPostsData = getSortedPostsData();
   const postsData = allPostsData.filter((post) => {
     return post.category.toLowerCase() === params.category;
