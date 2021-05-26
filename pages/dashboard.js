@@ -3,13 +3,10 @@ import GSearch from "../components/gsearch";
 import YoutubeSearch from "../components/youtubesearch";
 import Pomodoro from "../components/pomodoro";
 import JQ from "../components/jq";
-import Link from "next/link";
+
 export default function Sarthak(props) {
   return (
     <Layout title='The Dashboard'>
-      <Link href='/memes'>
-        <a>Memes</a>
-      </Link>{" "}
       <JQ joke={props.joke} quote={props.quote} />
       <GSearch />
       <YoutubeSearch />
