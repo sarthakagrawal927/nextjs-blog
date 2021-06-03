@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import Session from "./Session";
 import Break from "./Break";
 // import soundfile from "./ride.wav";

@@ -27,6 +27,11 @@ export default function Home() {
           {" "}
           <Link href='/posts/category'>Post Categories</Link>
         </li>
+        <li>
+          <a href='https://boxing-dusky.vercel.app/'>
+            Box App (under Construction)
+          </a>
+        </li>
       </ul>{" "}
     </Layout>
   );

@@ -1,5 +1,3 @@
-import React from "react";
-
 const Break = (props) => {
   return (
     <div className='break-container'>

@@ -1,5 +1,3 @@
-import React from "react";
-
 const Session = (props) => {
   return (
     <div className='session-container'>
