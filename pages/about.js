@@ -8,8 +8,8 @@ const about = () => {
       <ul>
         <li>
           {" "}
-          <a href='https://www.imdb.com/user/ur102109993/lists?ref_=nv_usr_lst_3'>
-            My Lists
+          <a href='https://www.imdb.com/list/ls083838140/'>
+            My Watched TV series
           </a>
         </li>
         <li>

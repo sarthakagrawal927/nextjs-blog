@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 
-import classes from "./contact-form.module.scss";
 import Notification from "./notification";
 
 async function sendContactData(contactDetails) {
@@ -87,11 +86,11 @@ function ContactForm() {
   }
 
   return (
-    <section className={classes.contact}>
+    <section className='contact'>
       <h1>How can I help you?</h1>
-      <form className={classes.form} onSubmit={sendMessageHandler}>
-        <div className={classes.controls}>
-          <div className={classes.control}>
+      <form className='form' onSubmit={sendMessageHandler}>
+        <div className='controls'>
+          <div className='control'>
             <label htmlFor='email'>Your Email</label>
             <input
               type='email'
@@ -101,7 +100,7 @@ function ContactForm() {
               onChange={(event) => setEnteredEmail(event.target.value)}
             />
           </div>
-          <div className={classes.control}>
+          <div className='control'>
             <label htmlFor='name'>Your Name</label>
             <input
               type='text'
@@ -112,7 +111,7 @@ function ContactForm() {
             />
           </div>
         </div>
-        <div className={classes.control}>
+        <div className='control'>
           <label htmlFor='message'>Your Message</label>
           <textarea
             id='message'
@@ -124,7 +123,7 @@ function ContactForm() {
             }></textarea>
         </div>
 
-        <div className={classes.actions}>
+        <div className='actions'>
           <button>Send Message</button>
         </div>
       </form>

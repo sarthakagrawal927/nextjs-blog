@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 import Layout from "../components/layout";
-import utilStyles from "../styles/utils.module.scss";
 
 export default function Home() {
   return (
@@ -18,7 +17,6 @@ export default function Home() {
           <Link href='/posts'>Posts</Link>
         </li>{" "}
         <li>
-          {" "}
           <Link href='/about'>About</Link>
         </li>{" "}
         <li>

@@ -1,6 +1,5 @@
 import Layout from "../components/layout";
-import GSearch from "../components/gsearch";
-import YoutubeSearch from "../components/youtubesearch";
+
 import Pomodoro from "../components/pomodoro";
 import JQ from "../components/jq";
 
@@ -8,8 +7,6 @@ export default function Sarthak(props) {
   return (
     <Layout title='The Dashboard'>
       <JQ joke={props.joke} quote={props.quote} />
-      <GSearch />
-      <YoutubeSearch />
       <Pomodoro />
     </Layout>
   );
