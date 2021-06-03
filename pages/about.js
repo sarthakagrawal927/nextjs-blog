@@ -5,11 +5,22 @@ const about = () => {
   return (
     <Layout>
       {" "}
-      <a href='https://www.imdb.com/user/ur102109993/lists?ref_=nv_usr_lst_3'>
-        Movies and Series{" "}
-      </a>
-      <a href='https://www.imdb.com/chart/moviemeter/'>Popular movies</a>
-      <a href='https://www.imdb.com/chart/tvmeter/'>Popular movies</a>
+      <ul>
+        <li>
+          {" "}
+          <a href='https://www.imdb.com/user/ur102109993/lists?ref_=nv_usr_lst_3'>
+            My Lists
+          </a>
+        </li>
+        <li>
+          {" "}
+          <a href='https://www.imdb.com/chart/moviemeter/'>Popular movies</a>
+        </li>
+        <li>
+          {" "}
+          <a href='https://www.imdb.com/chart/tvmeter/'>Popular TV</a>
+        </li>
+      </ul>
       Coding Activity
       <img src='https://wakatime.com/share/@sarthakagrawal927/7466eb9d-adc9-43fa-9bba-8f10836e873f.png' />
       <figure>
