@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import JugglingKid from "../components/jugglingKid";
 import Layout from "../components/layout";
 
 export default function Home() {
@@ -33,6 +34,7 @@ export default function Home() {
           </a>
         </li>
       </ul>{" "}
+      <JugglingKid />
     </Layout>
   );
 }

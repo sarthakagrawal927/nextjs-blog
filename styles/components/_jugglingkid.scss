@@ -1,0 +1,83 @@
+@use "sass:math";
+
+$boxWidth: 350px;
+$ballWidth: 50px;
+$translateX: 135px;
+$translateY: 120px;
+$time: 3.1s;
+$scale: 1.1;
+
+.juggle-box {
+  position: absolute;
+  top: 14%;
+  left: 72%;
+}
+
+.juggler {
+  background-color: transparent;
+}
+
+.preload-juggle {
+  width: $boxWidth;
+  height: $boxWidth;
+  margin-top: math.div(-$boxWidth, 1.9);
+  // margin-left: math.div(-$boxWidth, 2);
+
+  div {
+    position: absolute;
+    width: $ballWidth;
+    height: $ballWidth;
+    border-radius: math.div($ballWidth, 2);
+    background-size: cover;
+    background-image: url("/images/cpp.webp");
+
+    margin-top: math.div($boxWidth, 2);
+    margin-left: math.div($boxWidth, 2);
+    animation: juggle $time linear infinite;
+  }
+
+  div:nth-child(1) {
+    background-image: url("/images/js.webp");
+    animation-delay: math.div(-$time, 3);
+  }
+
+  div:nth-child(2) {
+    background-image: url("/images/py.webp");
+    animation-delay: math.div(-$time, 1.5);
+  }
+}
+
+@keyframes juggle {
+  0% {
+    transform: translateX(0px) translateY(0px);
+  }
+  12.5% {
+    transform: translateX(math.div($translateX, 2)) translateY(-$translateY)
+      scale($scale);
+  }
+  25% {
+    transform: translateX($translateX) translateY(0px);
+    animation-timing-function: ease-out;
+  }
+  37.5% {
+    transform: translateX(math.div($translateX, 2)) translateY($translateY);
+  }
+  50% {
+    transform: translateX(0px) translateY(0px);
+  }
+  62.5% {
+    transform: translateX(math.div(-$translateX, 2)) translateY(-$translateY)
+      scale($scale);
+    animation-timing-function: ease-in;
+  }
+  75% {
+    transform: translateX(-$translateX) translateY(0px);
+    animation-timing-function: ease-out;
+  }
+  87.5% {
+    transform: translateX(math.div(-$translateX, 2)) translateY($translateY);
+  }
+  100% {
+    transform: translateX(0px) translateY(0px);
+  }
+}

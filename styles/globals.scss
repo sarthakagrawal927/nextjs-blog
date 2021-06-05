@@ -2,7 +2,14 @@
 
 @import "./layout/_structure.scss";
 
-@import "./components/contactForm.scss";
+@import "./components/contactForm";
+@import "./components/jugglingkid";
 
-@import "./base/_base.scss";
+@import "./base/base";
 @import "./base/typography";
+
+@import "./pages/about";
+@import "./pages/dashboard";
+@import "./pages/home";
+@import "./pages/post";
+@import "./pages/posts";
