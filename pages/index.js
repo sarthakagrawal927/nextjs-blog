@@ -30,7 +30,7 @@ export default function Home() {
         </li>
         <li>
           <a href='https://boxing-dusky.vercel.app/'>
-            Box App (under Construction)
+            Box App
           </a>
         </li>
       </ul>{" "}
