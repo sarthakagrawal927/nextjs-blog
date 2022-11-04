@@ -4,6 +4,6 @@ date: '2022-10-21'
 category: 'Story'
 ---
 
-Will write my story here with GIFs.
+Might write some side stories with GIF.
 
 ![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
